@@ -1,0 +1,35 @@
+'''
+merge sorted list
+'''
+# class Solution:
+# 	#@param A  a list of integers
+# 	#@param m an integer, length of A
+# 	#@param B a list of integers
+# 	#@param n an integer, length of B
+# 	#@return nothing
+# def merge(A, m, B, n):
+# 	i = m - 1
+# 	j = n - 1
+# 	k = m + n -1
+# 	while i >= 0 and j >= 0:
+# 		if A[ i ] > B[ j ]:
+# 			A[ k ] = A[ i ]
+# 			i -= 1
+# 		else:
+# 			A[k] = B[j]
+# 			j -= 1
+# 		k -= 1
+# 	while j >= 0:
+# 		A[k] = B[j]
+# 		j -= 1
+# 		k -= 1
+
+# test
+A = [1,2,3,5,5,20,9]
+B = [3,34,1,4]
+
+def merge(A,B):
+	# merge A and B in a sorted order
+	return sorted(list(set(sorted(A+B))))
+
+print (merge(A,B))

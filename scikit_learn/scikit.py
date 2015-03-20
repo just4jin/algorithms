@@ -21,7 +21,7 @@ print X
 # get a single element
 print X[0,0]
 
-# get a row
+
 print X[1]
 
 # get a column
@@ -56,7 +56,7 @@ print X_csr
 
 # convert the sparse matrix to a dense array
 print X_csr.toarray()
-# CSR representation can be very efficient for computations, not 
+# CSR representation can be very efficient for computations, not
 # so good for adding elements, where List-In-List representation is better
 
 # create an empty LIL matrix and add some items
@@ -64,11 +64,11 @@ X_lil = sparse.lil_matrix((5,5))
 
 for i,j in np.random.randint(0,5,(15,2)):
     X_lil[i,j] = i + j
-    
+
 print X_lil
 print X_lil.toarray()
 
-# convert to a csr format 
+# convert to a csr format
 X_csr = X_lil.tocsr()
 print X_csr
 

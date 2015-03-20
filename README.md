@@ -1,4 +1,5 @@
-python-update
-=============
+Algorithms
+======================================
 
-update python code 
+Data Structure and Algorithms Coding in Python
+
